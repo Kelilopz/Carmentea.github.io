@@ -1,5 +1,7 @@
+
+
 *{
-    margin: o;
+    margin: 0;
     padding: 0;
     text-decoration: none;
 }
@@ -21,13 +23,16 @@ ul{
 }
 .logo a{
     text-decoration: none;
-    color: maroon;
+    font-size: 150%;
+    color: red;
 }
 
 header{
+    background-color: black;
+    opacity: 80%;
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 13vh;
     color: transparent;
     display: flex;
 }
@@ -40,15 +45,18 @@ header{
 .logo{
     width: 60%;
     height: 15vh;
-    color: maroon;
+    color: red;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     /* flex-direction: row-reverse; */
     /* font-size: 2.5em; */
 }
+#Logo p  {
+    font-size: 1em;
+}
 .logo h2{
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin-top: 8px;
     margin-bottom: 0px;
 
@@ -64,12 +72,13 @@ footer{
 }
 #reservas   {
     
-    background-color: grey;
+    background-color: red;
     width: 200px;
     height: 50px;
-    border-color: grey;
+    border-color: red;
     color: white;
     position: fixed;
+    cursor: pointer;
 }
  p{
     display: flex;
@@ -87,6 +96,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+    font-size: 1.2rem;
 }
 .navegaddor{
     text-decoration: none;
@@ -100,6 +110,9 @@ footer{
     color: black;
 }
 
+.navegaddor li a {
+    color: red;
+}
 
 #contenedor{
     display: flex;
@@ -107,6 +120,7 @@ footer{
     overflow: hidden;
 }
 #home{
+    margin-top: 6rem;
     width: 100vw;
     height: 110vh;
     display: flex;
@@ -129,6 +143,7 @@ footer{
     padding-left: 2vw;
     background-image: none;
     color: transparent;
+   
 }
 #rigth-home{
     width: 200vw;
@@ -139,13 +154,21 @@ footer{
     background-size: cover ;
     /* background-size: 1500px; */
 }
-#left-home p{
-    margin: 0;
+
+#left-home p {
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
     color: black;
+    width: 80%;
 }
 #left-home h1{
     margin-top: 4vh;
     margin-bottom: 4vh;
+    font-size: 3rem;
+    font-weight: bold;  
+    font-family: "Protest Strike", sans-serif; 
+
+  
 }
 #rigth-home{
     width: 50vw;
@@ -169,7 +192,50 @@ footer{
     align-items: center;
     padding-top: 45vh;
     padding-left: 5vw;
+    font-size: 130%;
+    font-family: 'Times New Roman', Times, serif;
+   
 }
+.left-about h1{
+    font-size: 300%;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.left-about p{
+    width: 80%;   
+    font-size: 130%;
+}
+
+.left-about a {
+    background-color: red;
+    font-family: "Protest Strike", sans-serif; 
+    justify-content: center;
+    font-weight: 800;
+}
+.left-about-menu-p{
+    font-family: "Protest Strike", sans-serif; 
+    justify-content: center;
+    font-weight: 800;
+
+}
+#menu-button {
+    background-color: red; /* Cambia el color de fondo */
+    color: white;              /* Color del texto */
+    padding: 20px 20px;        /* Espaciado alrededor del texto */
+    text-align: center;        /* Centrar el texto */
+    text-decoration: none;     /* Quitar el subrayado del enlace */
+    display: inline-block;     /* Para que el botón sea del tamaño del contenido */
+    font-size: 16px;           /* Tamaño de la fuente */
+    margin: 4px 2px;
+    cursor: pointer;          
+    border-radius: 8px;        
+}
+
+#menu-button:hover {
+    background-color: #45a049; /* Cambiar el color cuando se pasa el cursor por encima */
+}
+
+
 .rigth-about{
     display: flex;
     width: 60vw;
@@ -187,7 +253,7 @@ footer{
     justify-content: center;
 }
 .im-rigth-about img{
-    width: 30vw;
+    width: 50vw;
     height: 55vh;
 }
 
@@ -201,12 +267,12 @@ footer{
 }
 h1{
     color: maroon;
-    font-size: 2em;
+   
     padding: 0;
 }
 p{
     font-size: 1em;
-    padding-left: 3vh;
+
 }
 #sobrenosotros{
     width: 100vw;
@@ -227,6 +293,9 @@ p{
     background-color: black;
     justify-content: center;
 }
+#historia h1{
+    margin-top: -10px
+}
 .background-img-historia{
     height: 100%;
     width: 50%;
@@ -237,6 +306,7 @@ p{
     background-image: url("../img/carne2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }  
 
 #historia .background-img-historia{
@@ -247,7 +317,9 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4vw;
+    margin-left: 40px;
+    height: 40em;
+    width: 30em;
 }
 #galleta{
     width: 50vw;
@@ -277,6 +349,10 @@ p{
     /* background-image: url("); */
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+#menu{
 
 }
 button{
@@ -351,6 +427,35 @@ button{
     align-items: center;
     background-color: black;
 }
+
+#contact h1{
+    font-size: xx-large;
+}
+
+#contact a {
+    color: white; /* Color de los enlaces en contacto por defecto */
+    text-decoration: none; /* Para eliminar el subrayado si lo deseas */
+}
+
+#contact a:hover {
+    color: #ff9900; /* Color cuando pasas el cursor sobre el enlace */
+}
+
+#contact a:focus, #contact a:active {
+    color: #00ccff; /* Color cuando se selecciona o hace clic en el enlace */
+}
+
+#contact, #contact p, #contact a {
+    color: white; /* Color de texto blanco solo en la sección de contacto */
+}
+
+
+#contacto ul li a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+    background-color: red;
+}
 .im-rigth-about{
     /* background-image: url("../img/menu.jpeg");
     background-repeat: no-repeat; */
@@ -359,7 +464,7 @@ button{
 }
 .im-rigth-about img{
     height: 90vh;
-    width: 47vw;
+    width: 41vw;
     margin-left: 3vw ;
 }
 div img {
@@ -392,7 +497,6 @@ div img {
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-
 }
 .contacto{
     width: 22vw;
@@ -401,14 +505,23 @@ div img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
+
 #rigth-contact{
     width:40vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+}
+
+#rigt-contact iframe{
+    padding-right: -30px;
+}
+
+
 input[type="checkbox"]{
     visibility: hidden;
 }

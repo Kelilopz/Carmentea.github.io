@@ -13,7 +13,7 @@
         <section id="Head">
         <section id="Logo" class="logo">
         <a href="#home"><h2>CARMENTEA</h2></a>
-        <p>Leña, Carbon y Corazon</p>
+        <p >Leña, Carbon y Corazon</p>
         </section>
         <section id="Menus">
             <ul class="navegaddor">
@@ -26,7 +26,7 @@
             <input type="checkbox" id="Cambio-de-menu">
             <label for="Cambio-de-menu">☰</label>
         <footer>
-            <button id="reservas" onclick="window.location.href='https://api.whatsapp.com/send?phone=573124013599&text=Hola+Llanera+Carmentea%2C+quisiera+hacer+una+reserva'">
+            <button id="reservas" target="_blank" onclick="window.location.href='https://api.whatsapp.com/send?phone=573124013599&text=Hola+Llanera+Carmentea%2C+quisiera+hacer+una+reserva' ">
                 Reservar
             </button>
         </footer>
@@ -39,7 +39,7 @@
         <section>
             <section id="home">
                 <aside id="left-home">
-                    <p>Bucaramanga, Santander</p>
+                    <p class="left-home-p1">Bucaramanga, Santander</p>
                     <h1> La receta de nuestra abuelita <br> Somos Santander</h1>
                     <p> Carmentea es la recopilación, adaptación y mejora de aquellas recetas que han cautivado nuestro paladar y nuestro corazón a traves de los años. <br>
                          Somos una carta de agradecimiento a el amor que por años nos han brindado por medio de la cocina </p>
@@ -58,12 +58,11 @@
                 </div>
                 <div id="historia"><aside class="left-about">
                     <h1>Nuestro Chef</h1>
-                    <p> Oliva Ronderos, la realizadora de sueños, quien hizo que este gran <br>
-                        proyecto iniciara con sus sonrisas, sus correcciones y su infinito <br>
+                    <p> Oliva Ronderos, la realizadora de sueños, quien hizo que este gran 
+                        proyecto iniciara con sus sonrisas, sus correcciones y su infinito 
                         amor que nos logró transferir en cada una de sus recetas. <br> 
-
-                        Quien con sus manos preparó los platos que no paraban de deleitar <br>
-                        nuestro paladar; deliciosos y sin dejar a un lado la sencillez y humildad.
+                      <br>
+                        Quien con sus manos preparó los platos que no paraban de deleitar nuestro paladar; deliciosos y sin dejar a un lado la sencillez y humildad.
                         
                     </p>
                 </aside>
@@ -72,19 +71,21 @@
             </div>
             </section>  
             <section id="menu"> 
-                <aside class="im-rigth-about"><img src="img\menu.jpeg" alt="Imagen temporal">
+                <aside class="im-rigth-about"><img src="img\menu.jpeg " alt="Imagen temporal">
                 </aside>
-                <aside class="left-about">
-                    <h1>Conoce nuestro menu</h1>
-                    <p> Nuestro Menu
+                <aside class="left-about" id="Menu-Button">
+                    <h1>Conoce nuestro menú</h1>
+                    <p class="left-about-menu-p"> Nuestro Menú
                     </p>
-                    <button >Menu</button>
+                    <button id="menu-button" target="_blank" onclick="window.location.href='https://ugc.production.linktr.ee/8da737db-9dff-4d0e-bb79-43a3c84a817d_menu-24.pdf' ">
+                        Menú
+                    </button>         
                 </aside>
             </section>
             <section id="services">
                 <div id="galleta"><aside class="left-about">
                     <h1> Nuestros Servicios</h1>
-                    <p> Tenemos la mejor parrilla de la ciudad, todo preparado a <br>
+                    <p> Tenemos la mejor parrilla de la ciudad, todo preparado a
                          base de carbón y leña lo que nos permite tener un sazón unico. 
                     </p>
                 </div>
@@ -117,19 +118,19 @@
                     <aside id="left-contact">
                         <div class="contacto"><h1>Redes</h1>
                         <ul>
-                            <li><i class="fa-brands fa-instagram">  @llaneracarmentea</i></li>
-                            <li><i class="fa-brands fa-square-facebook">  @llaneracarmentea</i></li>
+                            <li><i class="fa-brands fa-instagram">  <a href="https://www.instagram.com/llaneracarmentea/?hl=es" target="_blank" id="contact-whatsapp">@llaneracarmentea</a></i></li>
+                            <li><i class="fa-brands fa-square-facebook">  <a href="https://www.facebook.com/Llaneracarmentea/?locale=es_LA" target="_blank" id="contact-whatsapp">@llaneracarmentea</a></i></li>
                         </ul>
                         </div>
                         <ul class="contacto"><h1>Contacto</h1>
-                            <a href="https://api.whatsapp.com/send?phone=573124013599&text=Hola+Llanera+Carmentea%2C+quisiera+ver+el+men%C3%BA+y+hacer+mi+pedido" target="_blank" id="contact-whatsapp">whatsapp</a>
-                            <li>  +57 3124013599</li>
-                            <li>  +57 3052288509</li>
-                            <li>  carmenteaadmin@gmail.com</li>
+                            <li><a href="https://api.whatsapp.com/send?phone=573124013599&text=Hola+Llanera+Carmentea%2C+quisiera+ver+el+men%C3%BA+y+hacer+mi+pedido" target="_blank" id="contact-whatsapp">whatsapp</a></li>
+                            <li><a href="tel:+573124013599" id="call-button">+57 3124013599</a></li>
+                            <li><a href="tel:+573052288509" id="call-button">+57 3052288509</a></li>
+                            <li> <a href="mailto:llaneracarmentea@gmail.com" id="email-button">llaneracarmentea@gmail.com</a></li>
                         </ul>
                     </aside>
                     <aside id="rigth-contact">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15837.548147636686!2d-73.1262454!3d7.0810495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fee1ac02b39%3A0x7f49f525976f0184!2sLlanera%20Carmentea!5e0!3m2!1ses-419!2sco!4v1707149406949!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15837.548147636686!2d-73.1262454!3d7.0810495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fee1ac02b39%3A0x7f49f525976f0184!2sLlanera%20Carmentea!5e0!3m2!1ses-419!2sco!4v1707149406949!5m2!1ses-419!2sco" width="600" height="450" style="border:0; margin-r: 2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
                     </aside>
             </section>
                
